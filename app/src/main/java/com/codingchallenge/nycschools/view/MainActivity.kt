@@ -49,6 +49,14 @@ class MainActivity : AppCompatActivity() {
         viewModel.getListOfSchools()
     }
 
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount > 1) {
+            supportFragmentManager.popBackStack()
+            return
+        }
+        finish()
+    }
+
     private fun initObservers() {
 
         viewModel.loading.observe(this, {
