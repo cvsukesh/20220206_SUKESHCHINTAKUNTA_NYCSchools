@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="nycSchool"
+            type="com.codingchallenge.nycschools.room.model.NycSchool" />
+
+        <variable
+            name="appUtils"
+            type="com.codingchallenge.nycschools.utils.AppUtils" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty_dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/school_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:text="@{nycSchool.highSchoolName}"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@{nycSchool.description}"
+                android:textSize="@dimen/text_size_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/school_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/total_students"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@{appUtils.getTotalStudents(nycSchool)}"
+                android:textSize="@dimen/text_size_15"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/avg_scores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@{appUtils.getAverageMathScore(nycSchool)}"
+                android:textSize="@dimen/text_size_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total_students" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

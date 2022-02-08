@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="default_error">Error</string>
+    <string name="default_error_message">Something went wrong, Please try again later.</string>
+    <string name="sat_average">SAT Average Score:\n</string>
+    <string name="sat_avg_math_score">Math: %s\n</string>
+    <string name="sat_critical_reading_avg_score">Critical reading : %s\n</string>
+    <string name="sat_writing_avg_score">Writing : %s\n</string>
+    <string name="total_students">Total Students : %s\n</string>
+
+    <string name="academic_opportunities">Academic Opportunities\n</string>
+
+    <string name="no_network">No Network</string>
+    <string name="network_error_message">Please check your internet connectivity</string>
+</resources>

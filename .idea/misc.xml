@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/layout_border.xml" value="0.29875" />
+        <entry key="app/src/main/res/layout-sw600dp/nyc_high_school_fragment_container.xml" value="0.33798543689320387" />
+        <entry key="app/src/main/res/layout-sw600dp/parent_fragment_layout.xml" value="0.19023224043715847" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
+        <entry key="app/src/main/res/layout/activity_school_detail.xml" value="0.29030797101449274" />
+        <entry key="app/src/main/res/layout/error_layout.xml" value="0.296195652173913" />
+        <entry key="app/src/main/res/layout/fragment_detail_nyc_high_school.xml" value="0.29030797101449274" />
+        <entry key="app/src/main/res/layout/fragment_list_nyc_high_schools.xml" value="0.16979166666666667" />
+        <entry key="app/src/main/res/layout/list_item_view_holder.xml" value="0.296195652173913" />
+        <entry key="app/src/main/res/layout/nyc_high_school_fragment_container.xml" value="0.25226449275362317" />
+        <entry key="app/src/main/res/layout/parent_fragment_layout.xml" value="0.23233695652173914" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
